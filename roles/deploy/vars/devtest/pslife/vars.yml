@@ -1,0 +1,6 @@
+---
+jboss_path: '/opt/jboss-eap-6.3'
+jboss_service: 'jboss-standalone'
+servers: 
+  - "localhost"
+  - "kubemaster"

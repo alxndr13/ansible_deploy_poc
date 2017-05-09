@@ -1,0 +1,9 @@
+---
+
+- include_vars: "{{ app.split('-')[1]|lower  }}/{{  app.split('-')[0]|lower }}/vars.yml"
+
+- name: Debug Output the JBoss Output
+  debug: var=jboss_path
+
+- name: Debug Output the JBoss Service Name
+  debug: var=jboss_service

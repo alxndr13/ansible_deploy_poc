@@ -1,0 +1,10 @@
+#
+# ansible-playbook -vvvv deploy.yml
+#
+
+---
+- hosts: '{{ servers }}'
+  roles:
+      - { role: deploy, app: "pslife-devtest"}
+  vars_files:
+    - tower.yml
